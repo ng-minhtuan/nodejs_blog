@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/ng-minhtuan/nodejs_blog#readme",
   "dependencies": {
+    "bootstrap": "^5.2.3",
     "express": "^4.18.2"
   },
   "devDependencies": {

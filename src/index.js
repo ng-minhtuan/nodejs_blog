@@ -9,6 +9,10 @@ const port = 3000;
 //GET Static File
 app.use(express.static(path.join(__dirname,'public')));
 
+// Use BootStrap
+app.use('/css', express.static(path.join(__dirname, 'node_modules','bootstrap','dist','css')))
+app.use('/js', express.static(path.join(__dirname, 'node_modules','bootstrap','dist','css')))
+
 //HTTP Logger (Morgan)
 app.use(morgan('combined'));
 
