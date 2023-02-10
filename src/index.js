@@ -10,8 +10,8 @@ const port = 3000;
 app.use(express.static(path.join(__dirname,'public')));
 
 // Use BootStrap
-app.use('/css', express.static(path.join(__dirname, 'node_modules','bootstrap','dist','css')))
-app.use('/js', express.static(path.join(__dirname, 'node_modules','bootstrap','dist','css')))
+app.use('/css-bootstrap', express.static(path.join(__dirname, '../node_modules/bootstrap/dist/css')))
+app.use('/js-bootstrap', express.static(path.join(__dirname, '../node_modules/bootstrap/dist/js')))
 
 //HTTP Logger (Morgan)
 app.use(morgan('combined'));
