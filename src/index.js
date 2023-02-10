@@ -6,6 +6,9 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+//GET Static File
+app.use(express.static(path.join(__dirname,'public')));
+
 //HTTP Logger (Morgan)
 app.use(morgan('combined'));
 
